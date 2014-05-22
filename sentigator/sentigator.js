@@ -93,7 +93,7 @@ var server = http.createServer(function(req, res) {
             // the second function had a shorter timeout.
             if (err) {
                 // Deal with errors
-                console.log("Got error: " + e.message);
+                console.log("Got error: " + err.message);
                 res.writeHead(500);
                 res.end("** Only Bear Here :) **");
             }
